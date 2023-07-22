@@ -1,8 +1,12 @@
+/*GENERAL*/
 :root {
   --font: Calibre, San Francisco, SF Pro Text, -apple-system, system-ui,
     BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
 }
-
+.invert {
+  filter: grayscale(100%);
+}
+/*------------*/
 .main {
 }
 
@@ -48,6 +52,9 @@ p {
   width: 100%;
   height: 100px;
   background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 /*ABOUT ME*/
@@ -70,7 +77,7 @@ p {
 
 .about-col-1 img {
   width: 100%;
-  border-radius: 15%;
+  border-radius: 10%;
 }
 
 .about-col-2 {
