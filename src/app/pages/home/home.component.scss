@@ -76,3 +76,20 @@ p {
 .about-col-2 {
   flex-basis: 50%;
 }
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab-links a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
