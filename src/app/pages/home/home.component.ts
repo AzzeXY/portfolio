@@ -1,11 +1,5 @@
-import {
-  Component,
-  ElementRef,
-  HostListener,
-  OnInit,
-  ViewChild,
-} from '@angular/core';
-import * as AOS from 'aos';
+import {Component, OnInit,} from '@angular/core';
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-home',
@@ -13,9 +7,21 @@ import * as AOS from 'aos';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
 
+  constructor() {
+  }
   ngOnInit() {
-    AOS.init();
+    const scrollObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting){
+          entry.target.classList.add('show');
+        }
+        else {
+          entry.target.classList.remove('show');
+        }
+      })
+    })
+    const testElements = document.querySelectorAll('.hidden');
+    testElements.forEach((el) => scrollObserver.observe(el));
   }
 }
