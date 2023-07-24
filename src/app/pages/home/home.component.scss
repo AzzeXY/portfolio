@@ -7,8 +7,18 @@
   filter: grayscale(100%);
 }
 /*------------*/
-.main {
+
+/*ANIMATIONS*/
+.hidden {
+  opacity: 0;
+  transition: all 2s;
 }
+
+.show{
+  opacity: 1  ;
+}
+
+/*----------------------*/
 
 h1 {
   font-family: var(--font);
@@ -65,11 +75,15 @@ p {
   min-height: 100vh;
   padding-bottom: 25vh;
 }
+.container{
+  scroll-snap-type: y mandatory;
+}
 .row {
   padding-top: 15vh;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  scroll-snap-align: center;
 }
 .about-col-1 {
   flex-basis: 35%;
@@ -100,3 +114,15 @@ p {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
 }
+
+/*-------------*/
+
+/*EXPERIENCES*/
+#experiences {
+  padding: 10px 10%;
+  display: grid;
+  align-content: center;
+  min-height: 60vh;
+  padding-bottom: 25vh;
+}
+/*-------*/
