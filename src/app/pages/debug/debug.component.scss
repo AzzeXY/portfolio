@@ -1,0 +1,13 @@
+section {
+  @apply h-screen;
+}
+
+/*ANIMATIONS*/
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+}
