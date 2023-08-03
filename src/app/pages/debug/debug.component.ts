@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { firstRowConfig, secondRowConfig } from 'src/app/configs/icons.config';
 
 @Component({
   selector: 'app-debug',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./debug.component.scss'],
 })
 export class DebugComponent implements OnInit {
+  public firstRow = firstRowConfig;
+  public secondRow = secondRowConfig;
   constructor() {}
   ngOnInit() {
     const scrollObserver = new IntersectionObserver((entries) => {

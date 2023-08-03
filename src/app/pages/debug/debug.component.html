@@ -1,16 +1,37 @@
-<div class="overflow-scroll h-screen snap-y snap-mandatory">
+<div class="max-w-screen overflow-scroll overflow-x-hidden h-screen snap-y snap-mandatory">
   <section class="snap-center">
     <div
       class="grid content-center min-h-screen pt-2.5 pb-2.5 pl-[10%] pr-[10%]"
     >
-      <p class="text-white font-apple text-2xl font-light">Hi my name is</p>
-      <p class="text-white font-apple text-7xl font-semibold">Luca Ebert</p>
-      <p class="text-white font-apple text-2xl font-light pt-1">
+      <p class="text-white text-2xl font-light">Hi my name is</p>
+      <p class="text-white text-7xl font-semibold">Luca Ebert</p>
+      <p class="text-white text-2xl font-light pt-1">
         I'm a Web-Developer
       </p>
     </div>
   </section>
-  <section class="snap-center"></section>
+  <section class="snap-center">
+    <div class="grid pt-20 pb-2.5 pl-[10%] pr-[10%]">
+      <div class="text-center pt-1">
+      <p class="text-white text-6xl font-semibold">My Skills</p>
+      <p class="text-white text-sm font-light ">At my young age, I have cultivated a creative mindset and a diverse skill set, <br> 
+        excelling in coding, photo and video design, and learning extensively, <br>
+        enabling me to approach complex challenges with innovation and confidence.</p>
+      </div>
+      <div class="flex justify-center content-center pt-8">
+        <div *ngFor="let img of firstRow" class="text-center px-9">
+          <img class="pb-4" [src]="img.path" alt="">
+          <label class="text-white text-center">{{img.text}}</label>
+        </div>
+      </div>
+      <div class="flex justify-center content-center pt-8">
+        <div *ngFor="let img of secondRow" class="text-center px-9">
+          <img class="pb-4" [src]="img.path" alt="">
+          <label class="text-white text-center">{{img.text}}</label>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="three"></section>
   <section class="four"></section>
 </div>
