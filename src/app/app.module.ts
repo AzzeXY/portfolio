@@ -6,9 +6,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { DebugComponent } from './pages/debug/debug.component';
+import { IconListComponent } from './shared/ui-components/icon-list/icon-list.component';
+import { SharedModule } from './shared/shared.module';
 @NgModule({
   declarations: [AppComponent, HomeComponent, DebugComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    SharedModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
