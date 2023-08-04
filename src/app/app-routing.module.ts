@@ -1,15 +1,15 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DebugComponent } from './pages/debug/debug.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: DebugComponent,
+    component: HomeComponent,
   },
   {
     path: 'debug',
-    component: DebugComponent,
+    component: HomeComponent,
   },
 ];
 
