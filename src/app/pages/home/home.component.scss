@@ -1,128 +1,14 @@
-/*GENERAL*/
-:root {
-  --font: Calibre, San Francisco, SF Pro Text, -apple-system, system-ui,
-    BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
-}
-.invert {
-  filter: grayscale(100%);
-}
-/*------------*/
-
 /*ANIMATIONS*/
-.hidden {
+.animate-hidden-intro {
   opacity: 0;
   transition: all 2s;
 }
 
-.show{
-  opacity: 1  ;
+.animate-show {
+  opacity: 1;
 }
 
-/*----------------------*/
-
-h1 {
-  font-family: var(--font);
-  color: white;
-  font-weight: 600;
-  font-size: 80px;
+.animate-hidden-experiences {
+  opacity: 0;
+  transition: all 2s;
 }
-
-h2 {
-  font-family: var(--font);
-  color: white;
-  font-weight: 600;
-  font-size: 60px;
-}
-p {
-  font-family: var(--font);
-  color: white;
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-.header-text {
-  padding: 10px 10%;
-  display: grid;
-  align-content: center;
-  min-height: 100vh;
-}
-.header-text p {
-  font-family: var(--font);
-  color: white;
-  font-weight: 500;
-  font-size: 30px;
-  padding-bottom: 30px;
-}
-.header-text h1 {
-  padding-bottom: 30px;
-}
-
-/* SPACER */
-.spacer {
-  width: 100%;
-  height: 100px;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-/*ABOUT ME*/
-#about-me {
-  padding: 10px 10%;
-  display: grid;
-  align-content: center;
-  min-height: 100vh;
-  padding-bottom: 25vh;
-}
-.container{
-  scroll-snap-type: y mandatory;
-}
-.row {
-  padding-top: 15vh;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  scroll-snap-align: center;
-}
-.about-col-1 {
-  flex-basis: 35%;
-}
-
-.about-col-1 img {
-  width: 100%;
-  border-radius: 10%;
-}
-
-.about-col-2 {
-  flex-basis: 50%;
-}
-
-.tab-titles {
-  display: flex;
-  margin: 20px 0 40px;
-}
-
-.tab-links {
-  margin-right: 50px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.tab-links a {
-  color: inherit; /* blue colors for links too */
-  text-decoration: inherit; /* no underline */
-}
-
-/*-------------*/
-
-/*EXPERIENCES*/
-#experiences {
-  padding: 10px 10%;
-  display: grid;
-  align-content: center;
-  min-height: 60vh;
-  padding-bottom: 25vh;
-}
-/*-------*/

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DebugComponent } from './debug.component';
+import { DatenschutzComponent } from './datenschutz.component';
 
-describe('DebugComponent', () => {
-  let component: DebugComponent;
-  let fixture: ComponentFixture<DebugComponent>;
+describe('DatenschutzComponent', () => {
+  let component: DatenschutzComponent;
+  let fixture: ComponentFixture<DatenschutzComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DebugComponent ]
+      declarations: [ DatenschutzComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DebugComponent);
+    fixture = TestBed.createComponent(DatenschutzComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
