@@ -8,6 +8,7 @@ module.exports = {
     screens: {
       ipad: "1024px",
       "ipad-pro": "1112px",
+      desktop: "1920px"
     },
     extend: {
       animation: {
