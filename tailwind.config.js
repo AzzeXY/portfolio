@@ -5,6 +5,10 @@ module.exports = {
     animation: ["motion-safe"],
   },
   theme: {
+    screens: {
+      ipad: "1024px",
+      "ipad-pro": "1112px",
+    },
     extend: {
       animation: {
         fadeIn: "fadeIn 1s ease-in forwards",
