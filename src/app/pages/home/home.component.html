@@ -14,7 +14,7 @@
     </div>
   </section>
   <section class="snap-center h-full">
-    <div class="grid pt-20 pb-2.5 pl-[10%] pr-[10%]">
+    <div class="flex flex-col h-screen pt-20 pb-2.5 pl-[10%] pr-[10%]">
       <div class="text-center pt-1 show-on-scroll">
         <p class="text-white text-6xl font-semibold">My Skills</p>
         <p class="text-white text-xl font-medium pb-20">
@@ -26,9 +26,11 @@
           confidence.
         </p>
       </div>
-      <app-icon-list></app-icon-list>
-      <div class="text-center pt-24">
-        <p class="text-white text-xl font-light pb-20 show-on-scroll-icon-5">
+      <div class="flex flex-col h-screen justify-center">
+        <app-icon-list></app-icon-list>
+      </div>
+      <div class="flex flex-col h-screen justify-end pb-32 desktop:pb-48">
+        <p class="text-white text-center text-xl font-light pb-20 show-on-scroll-icon-5">
           Building small and medium web applications with Angular
           or React. <br />
           I can also build web appliactions using WordPress. <br />
@@ -58,11 +60,19 @@
         >
           <a href="mailto:l.ebert@ebert-mmt.de"> l.ebert@ebert-mmt.de </a>
         </p>
-        <div class="flex flex-row space-x-2">
-          <p routerLink="/datenschutz" class="italic cursor-pointer">
-            Datenschutz
+        <div class="flex flex-col">
+          <div class="flex space-x-2">
+          <p class="italic cursor-pointer">
+            <a href="https://www.linkedin.com/in/luca-ebert-9b4494235/">LinkedIn</a>
           </p>
-          <p routerLink="/impressum" class="italic cursor-pointer">Impressum</p>
+          <p routerLink="/impressum" class="italic cursor-pointer"><a href="https://www.instagram.com/luxqaaa/">Instagram</a></p>
+          </div>
+          <div class="flex space-x-2 text-xs">
+            <p routerLink="/datenschutz" class="italic cursor-pointer">
+              Datenschutz
+            </p>
+            <p routerLink="/impressum" class="italic cursor-pointer">Impressum</p>
+            </div>
         </div>
       </div>
     </div>
