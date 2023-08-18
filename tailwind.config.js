@@ -6,6 +6,7 @@ module.exports = {
   },
   theme: {
     screens: {
+      iPhone: "390px",
       ipad: "1024px",
       "ipad-pro": "1112px",
       desktop: "1920px"
