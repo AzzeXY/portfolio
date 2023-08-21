@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'leportfolio';
+  title = 'leportfolio.dev';
 
   constructor(private readonly titleService: Title) {
     this.titleService.setTitle(this.title);
