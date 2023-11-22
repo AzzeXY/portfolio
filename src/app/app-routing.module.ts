@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
 import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component';
+import { PhotosComponent } from './pages/photos/photos.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'datenschutz',
     component: DatenschutzComponent,
+  },
+  {
+    path: 'photos',
+    component: PhotosComponent,
   },
 ];
 
