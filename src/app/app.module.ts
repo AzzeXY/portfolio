@@ -9,8 +9,9 @@ import { IconListComponent } from './shared/ui-components/icon-list/icon-list.co
 import { SharedModule } from './shared/shared.module';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
 import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component';
+import { PhotosComponent } from './pages/photos/photos.component';
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ImpressumComponent, DatenschutzComponent],
+  declarations: [AppComponent, HomeComponent, ImpressumComponent, DatenschutzComponent, PhotosComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
