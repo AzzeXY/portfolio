@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
 import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component';
 import { PhotosComponent } from './pages/photos/photos.component';
+import { WebDesignComponent } from './pages/web-design/web-design.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'photos',
     component: PhotosComponent,
+  },
+  {
+    path: 'web-design',
+    component: WebDesignComponent,
   },
 ];
 

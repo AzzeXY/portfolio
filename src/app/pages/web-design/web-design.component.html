@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+<div
+  class="max-w-screen overflow-scroll overflow-x-hidden h-screen snap-y snap-mandatory"
+>
+  <section class="snap-center">
+    <div
+      class="grid content-center min-h-screen pt-2.5 pb-2.5 pl-[10%] pr-[10%] show-on-scroll"
+    >
+      <p class="text-white text-2xl font-light">Check out my</p>
+      <p class="text-white text-7xl font-semibold">Web-Design</p>
+      <p class="text-white text-2xl font-light">Projects!</p>
+    </div>
+  </section>
+  <section class="snap-center h-screen">
+    <div
+      class="h-full flex max-ipad:flex-col space-x-5 max-ipad:space-x-0 max-ipad:space-y-5 justify-center pt-20 pb-2.5 pl-[10%] pr-[10%]"
+    >
+      <app-product-card
+        title="Local Store Website - Design"
+        description="Showcase your store!"
+        routing="/store-design"
+        imageUrl="assets/images/product-card/local-store-project.png"
+      ></app-product-card>
+      <app-product-card
+        title="Restaurant Website - Design"
+        description="The food as good as the website!"
+        routing="/restaurant-design"
+        imageUrl="assets/images/product-card/pizzeria-project.png"
+      ></app-product-card>
+      <app-product-card
+        title="Wedding Website - Design"
+        description="A special website for a special day!"
+        routing="/wedding-design"
+        imageUrl="assets/images/product-card/wedding-project.png"
+      ></app-product-card>
+    </div>
+  </section>
+</div>

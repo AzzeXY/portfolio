@@ -10,8 +10,9 @@ import { SharedModule } from './shared/shared.module';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
 import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component';
 import { PhotosComponent } from './pages/photos/photos.component';
+import { WebDesignComponent } from './pages/web-design/web-design.component';
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ImpressumComponent, DatenschutzComponent, PhotosComponent],
+  declarations: [AppComponent, HomeComponent, ImpressumComponent, DatenschutzComponent, PhotosComponent, WebDesignComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
